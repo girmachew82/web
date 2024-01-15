@@ -1,0 +1,19 @@
+20230927	12:50:18	ed324f3d-7ba7-4f61-a1a8-0cafe1bf935f	TypeError: res.status(...).if is not a function
+20230927	12:51:44	407fbb22-e738-4387-aa93-99b6b768f0eb	TypeError: res.status(...).if is not a function
+20230927	13:08:18	a6a591ac-272b-42f5-9514-693d33fd6bb5	Error: ENOENT: no such file or directory, stat 'F:\2015\Web\NodeJs\08Tut\views\subdir\test.html'
+20230927	13:44:10	cbc0bbf8-21a1-4fc0-bad5-d1a895d63c1f	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+20230927	13:45:31	9bfb54e6-f807-40a7-96e4-2cb1ad2b8a7e	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+20230927	13:45:33	0eef9547-d9aa-411c-8f9c-1e70cb40e08c	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+20230927	13:52:45	24f0c255-f582-4eb1-b104-0b742f82da77	TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle

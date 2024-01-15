@@ -1,0 +1,2 @@
+what react is?
+it is front end JS library

@@ -1,0 +1,18 @@
+ <a href="index.html"><img src="assets/images/dbuicon.png" alt="log"></a>
+            <div class="nav-links"  id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                     <li><a href="" >HOME</a></li>
+                     <li><a href="#about" >ABOUT</a></li>
+                     <li><a href="#campuse" >CAMPUS</a></li>
+                     <li><a href="#course" >COURSE</a></li>
+                     <li><a href="#facilities" >FACILITIES</a></li>
+                     <li><a href="#contact" >CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <div class="text-box">
+                <h1>Practical knowledge for better life</h1>
+                <p>Welcome to DBU </p>
+                <a href="" class="btn-hero">Visit More</a>
+            </div>

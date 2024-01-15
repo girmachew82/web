@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+          function one(call_two){
+              two()
+              console.log('function one');
+          }
+          function two(){
+              console.log('function two')
+          }
+          one(two)
+          */
+      
+        let stocks = {
+          Fruits: ["strawberry", "graps", "banana", "apple"],
+          liquid: ["water", "ice"],
+          holder: ["cone", "cup", "stick"],
+          topping: ["chocolate", "peanuts"],
+        };
+        // console.log(stocks.Fruits[2]);
+        let order = (Fruit_name,call_production) => {
+          setTimeout(()=>{
+              console.log(`${stocks.Fruits[Fruit_name]} was selected`)
+              call_production();
+          },2000)
+      
+        };
+        let production = () => {
+          setTimeout(()=>{
+              console.log('production started')
+              setTimeout(()=>{
+                  console.log("the fruit has been chopped")
+                  setTimeout(()=>{
+                      console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} was added`)
+                      setTimeout(()=>{
+                          console.log("The machine was started ")
+                          setTimeout(()=>{
+                              console.log(`ice cream was placed on ${stocks.holder[0]}`)
+                              setTimeout(()=>{
+                                  console.log(`${stocks.topping[0]} was added as topping `)
+                                  setTimeout(()=>{
+                                      console.log('serve ice cream')
+                                  },2000)
+                              },3000)
+                          },2000)
+                      },1000)
+                  },1000)
+              },2000)
+          },)
+        };
+        order(0,production);
+        //arraw function
+        /*
+          let order = (call_production) => {
+              console.log('order list please call production')
+              call_production()
+          };
+          let production = () => {
+              console.log('order received , start production')
+          };
+          order(production)
+       */
+      </script>
+      
+</body>
+</html>
