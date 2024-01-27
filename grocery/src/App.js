@@ -35,7 +35,8 @@ const handleDelete = (id) =>{
   return (
     <div className="App">
       <Header/>
-      <Content items={items}
+      <Content 
+       items={items}
        handleChecked={handleChecked}
        handleDelete ={handleDelete}
        />

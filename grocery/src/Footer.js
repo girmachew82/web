@@ -4,7 +4,7 @@ const Footer = ({items}) => {
     const date = new Date();
   return (
     <footer> 
-        {items.length}{items.length !== 1 ? " items" :" items" }&nbsp;
+        {items.length}{items.length !== 1 ? " items" :" item" }&nbsp;
         &copy;{date.getFullYear()}
         </footer>
   )
