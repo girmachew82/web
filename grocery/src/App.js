@@ -5,23 +5,7 @@ import Footer from './Footer';
 import Header from './Header';
 import { useState } from 'react';
 function App() {
-  const [items, setItems] = useState([
-    {
-        id: 1,
-        checked :true,
-        item: "Pizza"
-    },
-    {
-        id: 2,
-        checked :false,
-        item: "Milk"
-    },
-    {
-        id: 3,
-        checked :false,
-        item: "Bread"
-    },
-])
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem("shoppingList")))
 const setAndSaveItems = (newItems) => {
   setItems(newItems)
   localStorage.setItem("shoppingList", JSON.stringify(newItems))
