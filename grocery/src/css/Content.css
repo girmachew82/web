@@ -1,0 +1,8 @@
+ul li {
+    list-style: none;
+    font-weight: 500;
+}
+li {
+    width: auto;
+    background-color: aliceblue;
+}
