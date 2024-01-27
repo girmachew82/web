@@ -8,9 +8,9 @@ const Content = ({items,handleChecked, handleDelete}) => {
     <main>
         {items.length ?(
        <ItemList
-       items={items}
-       handleChecked={handleChecked}
-       handleDelete ={handleDelete}
+            items={items}
+            handleChecked={handleChecked}
+            handleDelete ={handleDelete}
        />
         ):"No item"}
     </main>
