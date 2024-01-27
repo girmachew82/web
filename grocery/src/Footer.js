@@ -1,9 +1,12 @@
 import React from 'react'
 import './css/Footer.css'
-const Footer = () => {
+const Footer = ({items}) => {
     const date = new Date();
   return (
-    <footer> &copy;{date.getFullYear()}</footer>
+    <footer> 
+        {items.length}{items.length !== 1 ? " items" :" items" }&nbsp;
+        &copy;{date.getFullYear()}
+        </footer>
   )
 }
 
