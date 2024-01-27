@@ -7,6 +7,7 @@ const ItemList = ({items,handleChecked, handleDelete}) => {
             
     {items.map((item) =>(
         <LineItem
+            key={item.id}
             item={item}
             handleChecked={handleChecked}
             handleDelete={handleDelete}
