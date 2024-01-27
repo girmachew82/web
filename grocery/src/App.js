@@ -26,15 +26,20 @@ const handleChecked = (id) =>{
   setItems(listItems)
   localStorage.setItem("shoppingList", JSON.stringify(listItems))
 }
-const handleDelete =(id) =>{
-  
+const handleDelete = (id) =>{
+  const listItems = items.filter((item) => item.id !== id )
+  setItems(listItems)
+  localStorage.setItem("shoppingList", JSON.stringify(listItems))
 }
+
   return (
     <div className="App">
       <Header/>
       <Content items={items}
        handleChecked={handleChecked}
+       handleDelete ={handleDelete}
        />
+      
       <Footer items= {items}/>
     </div>
   );

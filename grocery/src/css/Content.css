@@ -10,3 +10,6 @@ li {
     margin-top: 3px;
     margin-right: 3px;
 }
+li svg:hover{
+    color: red;
+}
