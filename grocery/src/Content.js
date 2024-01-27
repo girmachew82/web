@@ -18,7 +18,10 @@ const Content = ({items,handleChecked}) => {
                     onChange={() => handleChecked(item.id)}
                     checked={item.checked}
                     />
-                   <label>{item.item} </label> 
+                   <label 
+                   onDoubleClick={() => handleChecked(item.id)}>
+                    {item.item} 
+                    </label> 
                    <FaTrashCan onClick={() => handelClick(item.id)}/>
                 </li>
             ))}

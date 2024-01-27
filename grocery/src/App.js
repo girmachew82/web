@@ -24,6 +24,10 @@ function App() {
 const handleChecked = (id) =>{
   const listItems = items.map((item) => item.id === id ? {...item, checked: !item.checked}:item)
   setItems(listItems)
+  localStorage.setItem("shoppingList", JSON.stringify(listItems))
+}
+const handleDelete =(id) =>{
+  
 }
   return (
     <div className="App">
