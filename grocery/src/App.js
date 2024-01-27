@@ -21,10 +21,16 @@ function App() {
         item: "Bread"
     },
 ])
+const handleChecked = (id) =>{
+  const listItems = items.map((item) => item.id === id ? {...item, checked: !item.checked}:item)
+  setItems(listItems)
+}
   return (
     <div className="App">
       <Header/>
-      <Content items={items}/>
+      <Content items={items}
+       handleChecked={handleChecked}
+       />
       <Footer items= {items}/>
     </div>
   );
